@@ -191,6 +191,20 @@ a {
   display: inline-block;
 }
 
+/* Inputs */
+.input {
+  border-radius: 30px;
+  border: 1px solid #ccc;
+  color: var(--color-headings);
+  font-size: 2rem;
+  outline: 0;
+  padding: 1.5rem 3.5rem;
+}
+
+::placeholder {
+  color: #cdcbd7;
+}
+
 /* MEDIA QUERIES */
 @media screen and (min-width: 1024px) {
   body {
@@ -222,6 +236,10 @@ a {
   }
 
   .btn {
+    font-size: 1.5rem;
+  }
+
+  .input {
     font-size: 1.5rem;
   }
 }
