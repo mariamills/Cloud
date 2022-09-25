@@ -34,6 +34,7 @@ h2,
 h3 {
   color: var(--color-headings);
   margin-bottom: 1rem;
+  line-height: 1.1;
 }
 
 h1 {
@@ -530,6 +531,22 @@ a {
   transform: translateY(5px);
 }
 
+/* Hero */
+.hero {
+  clip-path: polygon(0% 0%, 100% 0%, 100% 90%, 0% 100%);
+}
+
+.hero__tagline {
+  font-size: 2rem;
+  color: #b9c3cf;
+  letter-spacing: 1px;
+  margin: 2rem 0 5rem;
+}
+
+.hero__image {
+  width: 100%;
+}
+
 /* MEDIA QUERIES */
 @media screen and (min-width: 768px) {
   .grid--cols-2 {
@@ -572,6 +589,15 @@ a {
 
   .nav__item {
     border: 0;
+  }
+
+  .hero {
+    padding-top: 0;
+  }
+
+  .hero__content {
+    text-align: left;
+    align-self: center;
   }
 }
 
